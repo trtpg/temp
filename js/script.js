@@ -55,7 +55,7 @@ var products = [
 //   alert("see me?");
 // };
 
- $("#emailForm").submit(confirmEmail);  // subscribe to mailing list
+ // $("#emailForm").submit(confirmEmail);  // subscribe to mailing list
 
 
 function confirmEmail() {
@@ -67,6 +67,7 @@ function confirmEmail() {
   document.getElementById("email-confirm").innerHTML = msg1;
 
   event.preventDefault();
+  return false;
 }
 
 // keep track number of products in card and display the total number
