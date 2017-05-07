@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Winter Scarves</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- jQuery library  for dismissable Alert -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+  <!-- TODO: replace with your personal Font Awesome CDN link -->
+  <script src="https://use.fontawesome.com/416cfe9f20.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="topnav" id="top-nav">
+      <ul class="navigation">
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+        <!-- <li class="cart-info">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </li> -->
+        <li class="col-xl-1"><a href="#" class="" data-toggle="modal" data-target="#cartModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="num-in-cart" id="total-inCart">0</span></a></li>
+      </ul>
+    </nav>
+
+<!--test modal cart  -->
+    <!-- Modal -->
+    <div class="modal fade" id="cartModal" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- <h4 class="modal-title">Modal Header</h4> -->
+            <h1> <i class="fa fa-shopping-cart"></i>My Cart</h1>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantiy</th>
+                  <th>Sub Total</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <br>
+      <div class="row">
+        <!-- left content -->
+        <aside class="col-md-2">
+            <form name="mailing" onsubmit="confirmEmail()">
+                <div class="form-group">
+                  <label for="email">Sign up for our mailing list:</label>
+                  <input type="email" id="email" name="email" class="form-control" required placeholder="Email">
+                </div>
+                <input type="submit" value="Submit" class="btn btn-primary btn-xs form-control">
+            </form>
+            <div id="email-confirm"></div>
+        </aside>
+
+        <!-- right content -->
+        <div class="col-md-10">
+          <h2>Scarves</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>W.W.W</p>
+  </footer>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
