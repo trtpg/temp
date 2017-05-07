@@ -50,6 +50,14 @@ var products = [
 ]
 
 
+// form submit
+// document.forms["mailing"].submit(){
+//   alert("see me?");
+// };
+
+ $("#emailForm").submit(confirmEmail);  // subscribe to mailing list
+
+
 function confirmEmail() {
   event.preventDefault();
   var email = document.mailing.email.value; // document.getElementById("email").value; should work too

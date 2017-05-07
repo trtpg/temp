@@ -33,36 +33,6 @@
       </ul>
     </nav>
 
-<!--test modal cart  -->
-    <!-- Modal -->
-    <div class="modal fade" id="cartModal" role="dialog">
-      <div class="modal-dialog modal-md">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <!-- <h4 class="modal-title">Modal Header</h4> -->
-            <h1> <i class="fa fa-shopping-cart"></i>My Cart</h1>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Quantiy</th>
-                  <th>Sub Total</th>
-                </tr>
-              </thead>
-            </table>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
 
 
@@ -75,7 +45,8 @@
       <div class="row">
         <!-- left content -->
         <aside class="col-md-2">
-            <form name="mailing" onsubmit="confirmEmail()">
+            <!-- <form name="mailing" onsubmit="confirmEmail()"> -->
+            <form name="mailing" id="emailForm">
                 <div class="form-group">
                   <label for="email">Sign up for our mailing list:</label>
                   <input type="email" id="email" name="email" class="form-control" required placeholder="Email">
